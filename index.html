@@ -1,0 +1,1762 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
+        integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js"
+        integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P"
+        crossorigin="anonymous"></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <!-- header starts here -->
+    <div class="container big-container p-0" style="border: solid #00ff00; height: 700rem;">
+        <nav class="navv1 px-3">
+            <strong class="d-sm-none d-lg-block time pt-5">Thu, Nov 28, 2019</strong>
+            <svg class="svv svv1" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 395.6 60"
+                style="enable-background:new 0 0 395.6 60;" xml:space="preserve">
+                <g>
+                    <path class="st0"
+                        d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7" />
+                </g>
+            </svg>
+            <strong class="mt-5 sinp">SIGNUP</strong>
+            <div class="bg-white px-2 subs-div mt-5">
+                <strong class="subscribe">SUBSCRIBE <i class=" px-0 fa fa-arrow-right" aria-hidden="true"></i></strong>
+            </div>
+            <spam class="ava-nav navbar p-0 d-lg-none  navbar-light">
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </spam>
+        </nav>
+        <!-- <div class="bg-white ct-nav">
+                dfr
+            </div> -->
+        <!-- LIST OF THE NAVRBARS -->
+        <!-- <div class="allnav">
+            <ul class="nav ul-v bg-white navbar-black text-uppercase d-flex justify-content-between">
+                <li class="nav-item liv"><a class="nav-link font-weight-bold" href="">usa</a></li>
+                <li class="nav-item liv"><a class="nav-link font-weight-bold" href="">london</a></li>
+                <li class="nav-item liv"><a class="nav-link font-weight-bold" href="">advert</a></li>
+                <li class="nav-item liv"><a class="nav-link font-weight-bold" href="">sport</a></li>
+                <li class="nav-item liv"><a class="nav-link font-weight-bold" href="">busines</a></li>
+                <li class="nav-item liv"><a class="nav-link font-weight-bold" href="">tech & science</a></li>
+                <li class="nav-item liv"><a class="nav-link font-weight-bold" href="">organiser</a></li>
+                <li class="nav-item liv"><a class="nav-link font-weight-bold" href="">culture</a></li>
+                <li class="nav-item liv"><a class="nav-link font-weight-bold" href="">culture</a></li>
+                <li class="nav-item liv"><a class="nav-link font-weight-bold" href="">
+                        <form>
+                            <input class="font-weight-bold" type="text" name="search" placeholder="Search..">
+                        </form>
+                    </a>
+                </li>
+            </ul>
+        </div> -->
+
+        <!-- BODY FIRST SECTION -->
+        <section class="ff-main">
+            <div class="m-2 ff-mini ff-mini1">
+                <small class="my-0">FEATURE STORIES</small>
+                <div class="d-flex d-sm-block mdp justify-content-between">
+                    <div>
+                        <div class="bg-light my-0 align-items-center d-inline-block small-ff-d">
+                            <strong>world</strong>
+                        </div>
+                        <img class="fst-img" src="image/1.jpg" alt="">
+                    </div>
+                    <div class="d-block boxcent">
+                        <div>
+                            <a href="">
+                                Chinese Media Calls Hong Kong Protesters' Pushfor Democracy a 'Pipe Dream'
+                            </a>
+                        </div>
+                        <small>
+                            "We must leave no room for collusion andinteraction between Hong Kong's radicalopposition
+                            and the U.S. dzfdfssg
+                        </small>
+                    </div>
+                </div>
+                <div class="d-flex d-lg-block mdp justify-content-between">
+                    <div>
+                        <div class="bg-light my-0 align-items-center d-inline-block small-ff-d">
+                            <strong>world</strong>
+                        </div>
+                        <img class="fst-img" src="image/2.jpg" alt="">
+                    </div>
+                    <div class="d-block boxcent">
+                        <div>
+                            <a href="">
+                                Chinese Media Calls Hong Kong Protesters' Pushfor Democracy a 'Pipe Dream'
+                            </a>
+                        </div>
+                        <small>
+                            "We must leave no room for collusion andinteraction between Hong Kong's radicalopposition
+                            and the U.S.
+                        </small>
+                    </div>
+                </div>
+                <div class="d-flex d-lg-block mdp justify-content-between">
+                    <div>
+                        <div class="bg-light my-0 align-items-center d-inline-block small-ff-d">
+                            <strong>world</strong>
+                        </div>
+                        <img class="fst-img" src="image/7.jpg" alt="">
+                    </div>
+                    <div class="d-block boxcent">
+                        <div>
+                            <a href="">
+                                Chinese Media Calls Hong Kong Protesters' Pushfor Democracy a 'Pipe Dream'
+                            </a>
+                        </div>
+                        <small>
+                            "We must leave no room for collusion andinteraction between Hong Kong'sradicalopposition and
+                            the U.S.
+                        </small>
+                    </div>
+                </div>
+                <div class="d-flex d-lg-block mdp justify-content-between">
+                    <div>
+                        <div class="bg-light my-0 align-items-center d-inline-block small-ff-d">
+                            <strong>world</strong>
+                        </div>
+                        <img class="fst-img" src="image/3.jpg" alt="">
+                    </div>
+                    <div class="d-block boxcent">
+                        <div>
+                            <a href="">
+                                Chinese Media Calls Hong Kong Protesters' Pushfor Democracy a 'Pipe Dream'
+                            </a>
+                        </div>
+                        <small>
+                            "We must leave no room for collusion andinteraction between Hong Kong'sradicalopposition and
+                            the U.S.
+                        </small>
+                    </div>
+                </div>
+                <div class="d-flex d-lg-block mdp justify-content-between">
+                    <div>
+                        <div class="bg-light my-0 align-items-center d-inline-block small-ff-d">
+                            <strong>world</strong>
+                        </div>
+                        <img class="fst-img" src="image/4.jpg" alt="">
+                    </div>
+                    <div class="d-block boxcent">
+                        <div>
+                            <a href="">
+                                Chinese Media Calls Hong Kong Protesters' Pushfor Democracy a 'Pipe Dream'
+                            </a>
+                        </div>
+                        <small>
+                            "We must leave no room for collusion andinteraction between Hong Kong'sradicalopposition and
+                            the U.S.
+                        </small>
+                    </div>
+                </div>
+                <div class="d-flex d-lg-block mdp justify-content-between">
+                    <div>
+                        <div class="bg-light my-0 align-items-center d-inline-block small-ff-d">
+                            <strong>world</strong>
+                        </div>
+                        <img class="fst-img" src="image/4.jpg" alt="">
+                    </div>
+                    <div class="d-block boxcent">
+                        <div>
+                            <a href="">
+                                Chinese Media Calls Hong Kong Protesters' Pushfor Democracy a 'Pipe Dream'
+                            </a>
+                        </div>
+                        <small>
+                            "We must leave no room for collusion andinteraction between Hong Kong'sradicalopposition and
+                            the U.S.
+                        </small>
+                    </div>
+                </div>
+                <div class="d-flex d-lg-block mdp justify-content-between">
+                    <div>
+                        <div class="bg-light my-0 align-items-center d-inline-block small-ff-d">
+                            <strong>world</strong>
+                        </div>
+                        <img class="fst-img" src="image/2.jpg" alt="">
+                    </div>
+                    <div class="d-block boxcent">
+                        <div>
+                            <a href="">
+                                Chinese Media Calls Hong Kong Protesters' Pushfor Democracy a 'Pipe Dream'
+                            </a>
+                        </div>
+                        <small>
+                            "We must leave no room for collusion andinteraction between Hong Kong'sradicalopposition and
+                            the U.S.
+                        </small>
+                    </div>
+                </div>
+                <div class="d-flex d-lg-block mdp justify-content-between">
+                    <div>
+                        <div class="bg-light my-0 align-items-center d-inline-block small-ff-d">
+                            <strong>world</strong>
+                        </div>
+                        <img class="fst-img" src="image/9.jpg" alt="">
+                    </div>
+                    <div class="d-block boxcent">
+                        <div>
+                            <a href="">
+                                Chinese Media Calls Hong Kong Protesters' Pushfor Democracy a 'Pipe Dream'
+                            </a>
+                        </div>
+                        <small>
+                            Longines has combined the femininity of materials
+                            and dynamic lines to create the new Conquest Classic.
+                            Perfectly suited for the women of today, it remains faithful to the brand's
+                            iconic elegance while offering new dials that mix mother-of-pearl, diamonds and touches of
+                            pink.
+                        </small>
+                    </div>
+                </div>
+                <div class="d-flex d-lg-block mdp justify-content-between">
+                    <div>
+                        <div class="bg-light my-0 align-items-center d-inline-block small-ff-d">
+                            <strong>world</strong>
+                        </div>
+                        <img class="fst-img" src="image/7.jpg" alt="">
+                    </div>
+                    <div class="d-block boxcent">
+                        <div>
+                            <a href="">
+                                Chinese Media Calls Hong Kong Protesters' Pushfor Democracy a 'Pipe Dream'
+                            </a>
+                        </div>
+                        <small>
+                            "We must leave no room for collusion andinteraction between Hong Kong'sradicalopposition and
+                            the U.S.
+                        </small>
+                    </div>
+                </div>
+                <div class="d-flex d-lg-block mdp justify-content-between">
+                    <div>
+                        <div class="bg-light my-0 align-items-center d-inline-block small-ff-d">
+                            <strong>world</strong>
+                        </div>
+                        <img class="fst-img" src="image/8.jpg" alt="">
+                    </div>
+                    <div class="d-block boxcent">
+                        <div>
+                            <a href="">
+                                Chinese Media Calls Hong Kong Protesters' Pushfor Democracy a 'Pipe Dream'
+                            </a>
+                        </div>
+                        <small>
+                            "We must leave no room for collusion andinteraction between Hong Kong'sradicalopposition and
+                            the U.S.
+                        </small>
+                    </div>
+                </div>
+                <div class="d-flex d-lg-block mdp justify-content-between">
+                    <div>
+                        <div class="bg-light my-0 align-items-center d-inline-block small-ff-d">
+                            <strong>world</strong>
+                        </div>
+                        <img class="fst-img" src="image/8.jpg" alt="">
+                    </div>
+                    <div class="d-block boxcent">
+                        <div>
+                            <a href="">
+                                Chinese Media Calls Hong Kong Protesters' Pushfor Democracy a 'Pipe Dream'
+                            </a>
+                        </div>
+                        <small>
+                            "We must leave no room for collusion andinteraction between Hong Kong'sradicalopposition and
+                            the U.S.
+                        </small>
+                    </div>
+                </div>
+                <div class="d-flex d-lg-block mdp justify-content-between">
+                    <div>
+                        <div class="bg-light my-0 align-items-center d-inline-block small-ff-d">
+                            <strong>world</strong>
+                        </div>
+                        <img class="fst-img" src="image/8.jpg" alt="">
+                    </div>
+                    <div class="d-block boxcent">
+                        <div>
+                            <a href="">
+                                Chinese Media Calls Hong Kong Protesters' Pushfor Democracy a 'Pipe Dream'
+                            </a>
+                        </div>
+                        <small>
+                            "We must leave no room for collusion andinteraction between Hong Kong'sradicalopposition and
+                            the U.S.
+                        </small>
+                    </div>
+                </div>
+                <div class="d-flex d-lg-block mdp justify-content-between">
+                    <div>
+                        <div class="bg-light my-0 align-items-center d-inline-block small-ff-d">
+                            <strong>world</strong>
+                        </div>
+                        <img class="fst-img" src="image/8.jpg" alt="">
+                    </div>
+                    <div class="d-block boxcent">
+                        <div>
+                            <a href="">
+                                Chinese Media Calls Hong Kong Protesters' Pushfor Democracy a 'Pipe Dream'
+                            </a>
+                        </div>
+                        <small>
+                            "We must leave no room for collusion andinteraction between Hong Kong'sradicalopposition and
+                            the U.S.
+                        </small>
+                    </div>
+                </div>
+            </div>
+            <!-- center feature stories -->
+            <div class="m-2 ff-mini2">
+                <small class="my-0">FEATURE STORIES</small>
+                <div class="d-lg-block mdp1  mt-4">
+                    <div>
+                        <div class="bg-light my-0 d-sm-none d-md-none align-items-center d-inline-block small-ff-d1">
+                            <strong>world</strong>
+                        </div>
+                        <img class="fst-img2" src="image/12.jpg" alt="">
+                    </div>
+                    <div class="d-block boxcent">
+                        <div>
+                            <a href="">
+                                Chinese Media Calls Hong Kong Protesters' Pushfor Democracy
+                            </a>
+                        </div>
+                        <small>
+                            "We must leave no room for collusion andinteraction between Hong Kong's radicalopposition
+                            and the U.S. dzfdfssg
+                        </small>
+                    </div>
+                </div>
+                card in feature stories
+                <div class="contain-g">
+                    <small class="my-4">FEATURE STORIES</small>
+                    <div class="gridy">
+                        <div class="d-block gridya mb-3 p-2">
+                            <img class="c-img" src="image/c1.jpg" alt="">
+                            <br>
+                            <a href="">
+                                The 20 Most-anticipated Books of 2020
+                            </a>
+                            <br>
+                            <small>
+                                With the arrival of the new year comes
+                                a flurry of new books we can't wait to devour
+                            </small>
+                            <br>
+                            <div class="my-0 align-items-center d-inline-block cc-hint">
+                                <strong>books</strong>
+                            </div>
+                        </div>
+                        <div class="d-block gridya mb-3 p-2">
+                            <img class="c-img" src="image/c2.jpg" alt="">
+                            <br>
+                            <a href="">
+                                The 20 Most-anticipated Books of 2020
+                            </a>
+                            <br>
+                            <small>
+                                With the arrival of the new year comes
+                                a flurry of new books we can't wait to devour
+                            </small>
+                            <br>
+                            <div class="my-0 align-items-center d-inline-block cc-hint">
+                                <strong>books</strong>
+                            </div>
+                        </div>
+                        <div class="d-block gridya mb-3 p-2">
+                            <img class="c-img" src="image/c3.jpg" alt="">
+                            <br>
+                            <a href="">
+                                The 20 Most-anticipated Books of 2020
+                            </a>
+                            <br>
+                            <small>
+                                With the arrival of the new year comes
+                                a flurry of new books we can't wait to devour
+                            </small>
+                            <br>
+                            <div class="my-0 align-items-center d-inline-block cc-hint">
+                                <strong>books</strong>
+                            </div>
+                        </div>
+                        <div class="d-block gridya mb-3 p-2">
+                            <img class="c-img" src="image/c4.jpg" alt="">
+                            <br>
+                            <a href="">
+                                The 20 Most-anticipated Books of 2020
+                            </a>
+                            <br>
+                            <small>
+                                With the arrival of the new year comes
+                                a flurry of new books we can't wait to devour
+                            </small>
+                            <br>
+                            <div class="my-0 align-items-center d-inline-block cc-hint">
+                                <strong>books</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- more stories -->
+                <div class="d-block more-s">
+                    <small class="my-1">FEATURE STORIES</small>
+                    <div>
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="seec-img"><img src="image/s1.jpg" alt=""></div>
+                            <div class="d-block px-3">
+                                <div><a href="">
+                                        Republican Defends Tweets Stating Rep. Ilhan Omar Should Be
+                                    </a></div>
+                                <div><small>
+                                        Twitter banned Danielle Stella after she tweeted that Omar
+                                        should be tried for treason and hanged in reference to unsubstantiated
+                                        allegations.
+                                    </small></div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="seec-img"><img src="image/s2.jpg" alt=""></div>
+                            <div class="d-block px-3">
+                                <div><a href="">
+                                        Republican Defends Tweets Stating Rep. Ilhan Omar Should Be
+                                    </a></div>
+                                <div><small>
+                                        Twitter banned Danielle Stella after she tweeted that Omar
+                                        should be tried for treason and hanged in reference to unsubstantiated
+                                        allegations.
+                                    </small></div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="seec-img"><img src="image/s11.jpg" alt=""></div>
+                            <div class="d-block px-3">
+                                <div><a href="">
+                                        Republican Defends Tweets Statg Rep. Ilhan Omar Should Be
+                                    </a></div>
+                                <div><small>
+                                        Twitter banned Danielle Stella after she tweeted that Omar
+                                        should be tried for treason and hanged in reference to unsubstantiated
+                                        allegations.
+                                    </small></div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="seec-img"><img src="image/s3.jpg" alt=""></div>
+                            <div class="d-block px-3">
+                                <div><a href="">
+                                        Republican Defends Tweets Stating Rep. Ilhan Omar Should Be
+                                    </a></div>
+                                <div><small>
+                                        Twitter banned Danielle Stella after she tweeted that Omar
+                                        should be tried for treason and hanged in reference to unsubstantiated
+                                        allegations.
+                                    </small></div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="seec-img"><img src="image/s5.jpg" alt=""></div>
+                            <div class="d-block px-3">
+                                <div><a href="">
+                                        Republican Defends Tweets Stating Rep. Ilhan Omar Should Be
+                                    </a></div>
+                                <div><small>
+                                        Twitter banned Danielle Stella after she tweeted that Omar
+                                        should be tried for treason and hanged in reference to unsubstantiated
+                                        allegations.
+                                    </small></div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="d-flex justify-content-between py-2 sec-stick">
+                            <div class="seec-img"><img src="image/s6.jpg" alt=""></div>
+                            <div class="d-block px-3">
+                                <div><a href="">
+                                        Republican Defends Tweets Stating Rep. Ilhan Omar Should Be
+                                    </a></div>
+                                <div><small>
+                                        Twitter banned Danielle Stella after she tweeted that Omar
+                                        should be tried for treason and hanged in reference to unsubstantiated
+                                        allegations.
+                                    </small></div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="seec-img"><img src="image/s7.jpg" alt=""></div>
+                            <div class="d-block px-3">
+                                <div><a href="">
+                                        Republican Defends Tweets Stating Rep. Ilhan Omar Should Be
+                                    </a></div>
+                                <div><small>
+                                        Twitter banned Danielle Stella after she tweeted that Omar
+                                        should be tried for treason and hanged in reference to unsubstantiated
+                                        allegations.
+                                    </small></div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="seec-img"><img src="image/s9.jpg" alt=""></div>
+                            <div class="d-block px-3">
+                                <div><a href="">
+                                        Republican Defends Tweets Stating Rep. Ilhan Omar Should Be
+                                    </a></div>
+                                <div><small>
+                                        Twitter banned Danielle Stella after she tweeted that Omar
+                                        should be tried for treason and hanged in reference to unsubstantiated
+                                        allegations.
+                                    </small></div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="seec-img"><img src="image/s1.jpg" alt=""></div>
+                            <div class="d-block px-3">
+                                <div><a href="">
+                                        Republican Defends Tweets Stating Rep. Ilhan Omar Should Be
+                                    </a></div>
+                                <div><small>
+                                        Twitter banned Danielle Stella after she tweeted that Omar
+                                        should be tried for treason and hanged in reference to unsubstantiated
+                                        allegations.
+                                    </small></div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="seec-img"><img src="image/s8.jpg" alt=""></div>
+                            <div class="d-block px-3">
+                                <div><a href="">
+                                        Republican Defends Tweets Stating Rep. Ilhan Omar Should Be
+                                    </a></div>
+                                <div><small>
+                                        Twitter banned Danielle Stella after she tweeted that Omar
+                                        should be tried for treason and hanged in reference to unsubstantiated
+                                        allegations.
+                                    </small></div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="seec-img"><img src="image/s8.jpg" alt=""></div>
+                            <div class="d-block px-3">
+                                <div><a href="">
+                                        Republican Defends Tweets Stating Rep. Ilhan Omar Should Be
+                                    </a></div>
+                                <div><small>
+                                        Twitter banned Danielle Stella after she tweeted that Omar
+                                        should be tried for treason and hanged in reference to unsubstantiated
+                                        allegations.
+                                    </small></div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="seec-img"><img src="image/s8.jpg" alt=""></div>
+                            <div class="d-block px-3">
+                                <div><a href="">
+                                        Republican Defends Tweets Stating Rep. Ilhan Omar Should Be
+                                    </a></div>
+                                <div><small>
+                                        Twitter banned Danielle Stella after she tweeted that Omar
+                                        should be tried for treason and hanged in reference to unsubstantiated
+                                        allegations.
+                                    </small></div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="seec-img"><img src="image/s8.jpg" alt=""></div>
+                            <div class="d-block px-3">
+                                <div><a href="">
+                                        Republican Defends Tweets Stating Rep. Ilhan Omar Should Be
+                                    </a></div>
+                                <div><small>
+                                        Twitter banned Danielle Stella after she tweeted that Omar
+                                        should be tried for treason and hanged in reference to unsubstantiated
+                                        allegations.
+                                    </small></div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="seec-img"><img src="image/s8.jpg" alt=""></div>
+                            <div class="d-block px-3">
+                                <div><a href="">
+                                        Republican Defends Tweets Stating Rep. Ilhan Omar Should Be
+                                    </a></div>
+                                <div><small>
+                                        Twitter banned Danielle Stella after she tweeted that Omar
+                                        should be tried for treason and hanged in reference to unsubstantiated
+                                        allegations.
+                                    </small></div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="seec-img"><img src="image/s8.jpg" alt=""></div>
+                            <div class="d-block px-3">
+                                <div><a href="">
+                                        Republican Defends Tweets Stating Rep. Ilhan Omar Should Be
+                                    </a></div>
+                                <div><small>
+                                        Twitter banned Danielle Stella after she tweeted that Omar
+                                        should be tried for treason and hanged in reference to unsubstantiated
+                                        allegations.
+                                    </small></div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="seec-img"><img src="image/s8.jpg" alt=""></div>
+                            <div class="d-block px-3">
+                                <div><a href="">
+                                        Republican Defends Tweets Stating Rep. Ilhan Omar Should Be
+                                    </a></div>
+                                <div><small>
+                                        Twitter banned Danielle Stella after she tweeted that Omar
+                                        should be tried for treason and hanged in reference to unsubstantiated
+                                        allegations.
+                                    </small></div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="seec-img"><img src="image/s8.jpg" alt=""></div>
+                            <div class="d-block px-3">
+                                <div><a href="">
+                                        Republican Defends Tweets Stating Rep. Ilhan Omar Should Be
+                                    </a></div>
+                                <div><small>
+                                        Twitter banned Danielle Stella after she tweeted that Omar
+                                        should be tried for treason and hanged in reference to unsubstantiated
+                                        allegations.
+                                    </small></div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+
+
+            <!-- Opinion narticles -->
+            <div class="m-2 ff-mini2">
+                <small class="my-0">FEATURE STORIES</small>
+                <div class="d-flex justify-content-between mb-3 mt-4">
+                    <div class="div-right-img mx-3">
+                        <img class="fst-circle" src="image/cr1.jpg" alt="">
+                    </div>
+                    <div class="d-block boxcent">
+                        <div>
+                            <a href="">
+                                Chinese Media Calls Hong Kong Protesters' Pushfor Democracy
+                            </a>
+                        </div>
+                        <small>
+                            <strong>BY KIM CHURCHES</strong>
+                        </small>
+                    </div>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between mb-3 mt-4">
+                    <div class="div-right-img mx-3">
+                        <img class="fst-circle" src="image/cr1.jpg" alt="">
+                    </div>
+                    <div class="d-block boxcent">
+                        <div>
+                            <a href="">
+                                Chinese Media Calls Hong Kong Protesters' Pushfor Democracy
+                            </a>
+                        </div>
+                        <small>
+                            <strong>BY KIM CHURCHES</strong>
+                        </small>
+                    </div>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between mb-3 mt-4">
+                    <div class="div-right-img mx-3">
+                        <img class="fst-circle" src="image/cr1.jpg" alt="">
+                    </div>
+                    <div class="d-block boxcent">
+                        <div>
+                            <a href="">
+                                Chinese Media Calls Hong Kong Protesters' Pushfor Democracy
+                            </a>
+                        </div>
+                        <small>
+                            <strong>BY KIM CHURCHES</strong>
+                        </small>
+                    </div>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between mb-3 mt-4">
+                    <div class="div-right-img mx-3">
+                        <img class="fst-circle" src="image/cr1.jpg" alt="">
+                    </div>
+                    <div class="d-block boxcent">
+                        <div>
+                            <a href="">
+                                Chinese Media Calls Hong Kong Protesters' Pushfor Democracy
+                            </a>
+                        </div>
+                        <small>
+                            <strong>BY KIM CHURCHES</strong>
+                        </small>
+                    </div>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between mb-3 mt-4">
+                    <div class="div-right-img mx-3">
+                        <img class="fst-circle" src="image/cr1.jpg" alt="">
+                    </div>
+                    <div class="d-block boxcent">
+                        <div>
+                            <a href="">
+                                Chinese Media Calls Hong Kong Protesters' Pushfor Democracy
+                            </a>
+                        </div>
+                        <small>
+                            <strong>BY KIM CHURCHES</strong>
+                        </small>
+                    </div>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between mb-3 mt-4">
+                    <div class="div-right-img mx-3">
+                        <img class="fst-circle" src="image/cr1.jpg" alt="">
+                    </div>
+                    <div class="d-block boxcent">
+                        <div>
+                            <a href="">
+                                Chinese Media Calls Hong Kong Protesters' Pushfor Democracy
+                            </a>
+                        </div>
+                        <small>
+                            <strong>BY KIM CHURCHES</strong>
+                        </small>
+                    </div>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between mb-3 mt-4">
+                    <div class="div-right-img mx-3">
+                        <img class="fst-circle" src="image/cr1.jpg" alt="">
+                    </div>
+                    <div class="d-block boxcent">
+                        <div>
+                            <a href="">
+                                Chinese Media Calls Hong Kong Protesters' Pushfor Democracy
+                            </a>
+                        </div>
+                        <small>
+                            <strong>BY KIM CHURCHES</strong>
+                        </small>
+                    </div>
+                </div>
+                <hr>
+                <!-- LATEST NEWS -->
+                <div class="d-block">
+                    <small class="my-1">LATEST NEWS</small>
+                    <div>
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="seec-img"><img src="image/s1.jpg" alt=""></div>
+                            <div class="d-block px-3">
+                                <div><a href="">
+                                        Republican Defends Tweets Stating Rep. Ilhan Omar Should Be
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="seec-img"><img src="image/s2.jpg" alt=""></div>
+                            <div class="d-block px-3">
+                                <div><a href="">
+                                        Republican Defends Tweets Stating Rep. Ilhan Omar Should Be
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="seec-img"><img src="image/s11.jpg" alt=""></div>
+                            <div class="d-block px-3">
+                                <div><a href="">
+                                        Republican Defends Tweets Statg Rep. Ilhan Omar Should Be
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="seec-img"><img src="image/s3.jpg" alt=""></div>
+                            <div class="d-block px-3">
+                                <div><a href="">
+                                        Republican Defends Tweets Stating Rep. Ilhan Omar Should Be
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="seec-img"><img src="image/s5.jpg" alt=""></div>
+                            <div class="d-block px-3">
+                                <div><a href="">
+                                        Republican Defends Tweets Stating Rep. Ilhan Omar Should Be
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="seec-img"><img src="image/s6.jpg" alt=""></div>
+                            <div class="d-block px-3">
+                                <div><a href="">
+                                        Republican Defends Tweets Stating Rep. Ilhan Omar Should Be
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="seec-img"><img src="image/s7.jpg" alt=""></div>
+                            <div class="d-block px-3">
+                                <div><a href="">
+                                        Republican Defends Tweets Stating Rep. Ilhan Omar Should Be
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="seec-img"><img src="image/s9.jpg" alt=""></div>
+                            <div class="d-block px-3">
+                                <div><a href="">
+                                        Republican Defends Tweets Stating Rep. Ilhan Omar Should Be
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="seec-img"><img src="image/s1.jpg" alt=""></div>
+                            <div class="d-block px-3">
+                                <div><a href="">
+                                        Republican Defends Tweets Stating Rep. Ilhan Omar Should Be
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="seec-img"><img src="image/s8.jpg" alt=""></div>
+                            <div class="d-block px-3">
+                                <div><a href="">
+                                        Republican Defends Tweets Stating Rep. Ilhan Omar Should Be
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <!-- new article -->
+                    <div class="d-lg-block spons mt-4">
+                        <div class="hinty-right">
+                            <div class="bg-light my-0 align-items-center d-inline-block small-ff-blue">
+                                <strong>SPONSORED INSIGHT</strong>
+                            </div>
+                            <img class="fst-img2" src="image/r1.jpg" alt="">
+                        </div>
+                        <div class="d-block boxcent boxcent1 px-5 py-3 px-md-0">
+                            <div>
+                                <a href="">
+                                    Chinese Media Calls Hong Kong Protesters' Pushfor Democracy
+                                </a>
+                            </div>
+                            <small>
+                                As the Skywalker saga comes to a close,
+                                celebrate its powerful storyline with Newsweek’s Special Edition.
+                                Featuring behind-the-scenes photos
+                                of some of the galaxy’s most beloved Jedis.
+                            </small>
+                        </div>
+                    </div>
+                    <div class="d-lg-block  mt-4">
+                        <div class="hinty-right">
+                            <div class="bg-light my-0 align-items-center d-inline-block small-ff-blue">
+                                <strong>SPONSORED INSIGHT</strong>
+                            </div>
+                            <img class="fst-img2" src="image/r1.jpg" alt="">
+                        </div>
+                        <div class="d-block boxcent px-5 py-3">
+                            <div>
+                                <a href="">
+                                    Chinese Media Calls Hong Kong Protesters' Pushfor Democracy
+                                </a>
+                            </div>
+                            <small>
+                                As the Skywalker saga comes to a close,
+                                celebrate its powerful storyline with Newsweek’s Special Edition.
+                                Featuring behind-the-scenes photos
+                                of some of the galaxy’s most beloved Jedis.
+                            </small>
+                        </div>
+                    </div>
+                    <div class="d-lg-block  mt-4">
+                        <div class="hinty-right">
+                            <div class="bg-light my-0 align-items-center d-inline-block small-ff-blue">
+                                <strong>SPONSORED INSIGHT</strong>
+                            </div>
+                            <img class="fst-img2" src="image/r1.jpg" alt="">
+                        </div>
+                        <div class="d-block boxcent px-5 py-3">
+                            <div>
+                                <a href="">
+                                    Chinese Media Calls Hong Kong Protesters' Pushfor Democracy
+                                </a>
+                            </div>
+                            <small>
+                                As the Skywalker saga comes to a close,
+                                celebrate its powerful storyline with Newsweek’s Special Edition.
+                                Featuring behind-the-scenes photos
+                                of some of the galaxy’s most beloved Jedis.
+                            </small>
+                        </div>
+                    </div>
+                    <div class="d-lg-block  mt-4">
+                        <div class="hinty-right">
+                            <div class="bg-light my-0 align-items-center d-inline-block small-ff-blue">
+                                <strong>SPONSORED INSIGHT</strong>
+                            </div>
+                            <img class="fst-img2" src="image/r1.jpg" alt="">
+                        </div>
+                        <div class="d-block boxcent px-5 py-3">
+                            <div>
+                                <a href="">
+                                    Chinese Media Calls Hong Kong Protesters' Pushfor Democracy
+                                </a>
+                            </div>
+                            <small>
+                                As the Skywalker saga comes to a close,
+                                celebrate its powerful storyline with Newsweek’s Special Edition.
+                                Featuring behind-the-scenes photos
+                                of some of the galaxy’s most beloved Jedis.
+                            </small>
+                        </div>
+                    </div>
+                    <div class="d-lg-block  mt-4">
+                        <div class="hinty-right">
+                            <div class="bg-light my-0 align-items-center d-inline-block small-ff-blue">
+                                <strong>SPONSORED INSIGHT</strong>
+                            </div>
+                            <img class="fst-img2" src="image/r1.jpg" alt="">
+                        </div>
+                        <div class="d-block boxcent px-5 py-3">
+                            <div>
+                                <a href="">
+                                    Chinese Media Calls Hong Kong Protesters' Pushfor Democracy
+                                </a>
+                            </div>
+                            <small>
+                                As the Skywalker saga comes to a close,
+                                celebrate its powerful storyline with Newsweek’s Special Edition.
+                                Featuring behind-the-scenes photos
+                                of some of the galaxy’s most beloved Jedis.
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- second section starts -->
+        <div class="d-flex justify-content-center my-3">
+            <div class="small-M mr-2 p-1">M</div> <strong>IN THE MAGAZINE</strong>
+        </div>
+        <section class="sec-grid">
+            <div class="d-block gridya mb-3 p-2 mx-2">
+                <img class="cc-img mb-2" src="image/g2.jpg" alt="">
+                <br>
+                <div class="d-flex justify-content-staart">
+                    <div class="my-0 align-items-center d-inline-block mr-4 gg-hint">
+                        <strong>DOWNTIME</strong>
+                    </div>
+                    <div>
+                        <a href="">BUSINESS</a>
+                    </div>
+                </div>
+                <a href="">
+                    Is Corporate Social Responsibility Really a Good Thing?
+                </a>
+                <br>
+            </div>
+            <div class="d-block gridya mb-3 p-2 mx-2">
+                <img class="cc-img mb-2" src="image/g1.jpg" alt="">
+                <br>
+                <div class="d-flex justify-content-staart">
+                    <div class="my-0 align-items-center d-inline-block mr-4 gg-hint">
+                        <strong>DOWNTIME</strong>
+                    </div>
+                    <div>
+                        <a href="">BUSINESS</a>
+                    </div>
+                </div>
+                <a href="">
+                    Is Corporate Social Responsibility Really a Good Thing?
+                </a>
+                <br>
+            </div>
+            <div class="d-block gridya mb-3 p-2 mx-2">
+                <img class="cc-img mb-2" src="image/g3.jpg" alt="">
+                <br>
+                <div class="d-flex justify-content-staart">
+                    <div class="my-0 align-items-center d-inline-block mr-4 gg-hint">
+                        <strong>DOWNTIME</strong>
+                    </div>
+                    <div>
+                        <a href="">BUSINESS</a>
+                    </div>
+                </div>
+                <a href="">
+                    Is Corporate Social Responsibility Really a Good Thing?
+                </a>
+                <br>
+            </div>
+            <div class="d-block gridya mb-3 p-2 mx-2">
+                <img class="cc-img mb-2" src="image/g4.jpg" alt="">
+                <br>
+                <div class="d-flex justify-content-staart">
+                    <div class="my-0 align-items-center d-inline-block mr-4 gg-hint">
+                        <strong>DOWNTIME</strong>
+                    </div>
+                    <div>
+                        <a href="">BUSINESS</a>
+                    </div>
+                </div>
+                <a href="">
+                    Is Corporate Social Responsibility Really a Good Thing?
+                </a>
+                <br>
+            </div>
+
+            <div class="d-block gridya mb-3 p-2 mx-2">
+                <img class="cc-img mb-2" src="image/g1.jpg" alt="">
+                <br>
+                <div class="d-flex justify-content-staart">
+                    <div class="my-0 align-items-center d-inline-block mr-4 gg-hint">
+                        <strong>DOWNTIME</strong>
+                    </div>
+                    <div>
+                        <a href="">BUSINESS</a>
+                    </div>
+                </div>
+                <a href="">
+                    Is Corporate Social Responsibility Really a Good Thing?
+                </a>
+                <br>
+            </div>
+            <div class="d-block gridya mb-3 p-2 mx-2">
+                <img class="cc-img mb-2" src="image/g5.jpg" alt="">
+                <br>
+                <div class="d-flex justify-content-staart">
+                    <div class="my-0 align-items-center d-inline-block mr-4 gg-hint">
+                        <strong>DOWNTIME</strong>
+                    </div>
+                    <div>
+                        <a href="">BUSINESS</a>
+                    </div>
+                </div>
+                <a href="">
+                    Is Corporate Social Responsibility Really a Good Thing?
+                </a>
+                <br>
+            </div>
+            <div class="d-block gridya mb-3 p-2 mx-2">
+                <img class="cc-img mb-2" src="image/g1.jpg" alt="">
+                <br>
+                <div class="d-flex justify-content-staart">
+                    <div class="my-0 align-items-center d-inline-block mr-4 gg-hint">
+                        <strong>DOWNTIME</strong>
+                    </div>
+                    <div>
+                        <a href="">BUSINESS</a>
+                    </div>
+                </div>
+                <a href="">
+                    Is Corporate Social Responsibility Really a Good Thing?
+                </a>
+                <br>
+            </div>
+            <div class="d-block gridya mb-3 p-2 mx-2">
+                <img class="cc-img mb-2" src="image/g6.jpg" alt="">
+                <br>
+                <div class="d-flex justify-content-staart">
+                    <div class="my-0 align-items-center d-inline-block mr-4 gg-hint">
+                        <strong>DOWNTIME</strong>
+                    </div>
+                    <div>
+                        <a href="">BUSINESS</a>
+                    </div>
+                </div>
+                <a href="">
+                    Is Corporate Social Responsibility Really a Good Thing?
+                </a>
+                <br>
+            </div>
+        </section>
+
+        <!-- editors pick -->
+        <div class="d-flex justify-content-center my-3">
+            <div class="small-M mr-2 p-1">M</div> <strong>EDITORS PICK</strong>
+        </div>
+        <section class="editors dsmall ml-2">
+            <div class="d-flex d-md-block d-lg-block">
+                <div>
+                    <div class="bg-light my-0 align-items-center d-inline-block d-md-none small-ff-d">
+                        <strong>world</strong>
+                    </div>
+                    <img class="cc-imgg" src="image/fs1.jpg" alt="">
+                </div>
+                <div class="d-block boxcent">
+                    <div>
+                        <a href="">
+                            North Korea Firing Missiles on Thanksgiving Is 'No Coincidence': Ret. Col.
+                        </a>
+                    </div>
+                    <small>
+                        "Symbolism is very big for Kim. Look,
+                        it's business as usual in North Korea," Jack Jacobs told MSNBC.
+                    </small>
+                </div>
+            </div>
+            <div class="d-flex d-md-block d-lg-block">
+                <div>
+                    <div class="bg-light my-0 align-items-center d-inline-block d-md-none small-ff-d">
+                        <strong>world</strong>
+                    </div>
+                    <img class="cc-imgg" src="image/fs1.jpg" alt="">
+                </div>
+                <div class="d-block boxcent">
+                    <div>
+                        <a href="">
+                            North Korea Firing Missiles on Thanksgiving Is 'No Coincidence': Ret. Col.
+                        </a>
+                    </div>
+                    <small>
+                        "Symbolism is very big for Kim. Look,
+                        it's business as usual in North Korea," Jack Jacobs told MSNBC.
+                    </small>
+                </div>
+            </div>
+            <div class="d-flex d-md-block d-lg-block">
+                <div>
+                    <div class="bg-light my-0 align-items-center d-inline-block d-md-none small-ff-d">
+                        <strong>world</strong>
+                    </div>
+                    <img class="cc-imgg" src="image/fs1.jpg" alt="">
+                </div>
+                <div class="d-block boxcent">
+                    <div>
+                        <a href="">
+                            North Korea Firing Missiles on Thanksgiving Is 'No Coincidence': Ret. Col.
+                        </a>
+                    </div>
+                    <small>
+                        "Symbolism is very big for Kim. Look,
+                        it's business as usual in North Korea," Jack Jacobs told MSNBC.
+                    </small>
+                </div>
+            </div>
+            <div class="d-flex d-md-block d-lg-block">
+                <div>
+                    <div class="bg-light my-0 align-items-center d-inline-block d-md-none small-ff-d">
+                        <strong>world</strong>
+                    </div>
+                    <img class="cc-imgg" src="image/fs1.jpg" alt="">
+                </div>
+                <div class="d-block boxcent">
+                    <div>
+                        <a href="">
+                            North Korea Firing Missiles on Thanksgiving Is 'No Coincidence': Ret. Col.
+                        </a>
+                    </div>
+                    <small>
+                        "Symbolism is very big for Kim. Look,
+                        it's business as usual in North Korea," Jack Jacobs told MSNBC.
+                    </small>
+                </div>
+            </div>
+            <div class="d-flex d-md-block d-lg-block">
+                <div>
+                    <div class="bg-light my-0 align-items-center d-inline-block d-md-none small-ff-d">
+                        <strong>world</strong>
+                    </div>
+                    <img class="cc-imgg" src="image/fs1.jpg" alt="">
+                </div>
+                <div class="d-block boxcent">
+                    <div>
+                        <a href="">
+                            North Korea Firing Missiles on Thanksgiving Is 'No Coincidence': Ret. Col.
+                        </a>
+                    </div>
+                    <small>
+                        "Symbolism is very big for Kim. Look,
+                        it's business as usual in North Korea," Jack Jacobs told MSNBC.
+                    </small>
+                </div>
+            </div>
+            <div class="d-flex d-md-block d-lg-block">
+                <div>
+                    <div class="bg-light my-0 align-items-center d-inline-block d-md-none small-ff-d">
+                        <strong>world</strong>
+                    </div>
+                    <img class="cc-imgg" src="image/fs1.jpg" alt="">
+                </div>
+                <div class="d-block boxcent">
+                    <div>
+                        <a href="">
+                            North Korea Firing Missiles on Thanksgiving Is 'No Coincidence': Ret. Col.
+                        </a>
+                    </div>
+                    <small>
+                        "Symbolism is very big for Kim. Look,
+                        it's business as usual in North Korea," Jack Jacobs told MSNBC.
+                    </small>
+                </div>
+            </div>
+            <div class="d-flex d-md-block d-lg-block">
+                <div>
+                    <div class="bg-light my-0 align-items-center d-inline-block d-md-none small-ff-d">
+                        <strong>world</strong>
+                    </div>
+                    <img class="cc-imgg" src="image/fs1.jpg" alt="">
+                </div>
+                <div class="d-block boxcent">
+                    <div>
+                        <a href="">
+                            North Korea Firing Missiles on Thanksgiving Is 'No Coincidence': Ret. Col.
+                        </a>
+                    </div>
+                    <small>
+                        "Symbolism is very big for Kim. Look,
+                        it's business as usual in North Korea," Jack Jacobs told MSNBC.
+                    </small>
+                </div>
+            </div>
+            <div class="d-flex d-md-block d-lg-block">
+                <div>
+                    <div class="bg-light my-0 align-items-center d-inline-block d-md-none small-ff-d">
+                        <strong>world</strong>
+                    </div>
+                    <img class="cc-imgg" src="image/fs1.jpg" alt="">
+                </div>
+                <div class="d-block boxcent">
+                    <div>
+                        <a href="">
+                            North Korea Firing Missiles on Thanksgiving Is 'No Coincidence': Ret. Col.
+                        </a>
+                    </div>
+                    <small>
+                        "Symbolism is very big for Kim. Look,
+                        it's business as usual in North Korea," Jack Jacobs told MSNBC.
+                    </small>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- EATURES SLIDESHOW -->
+        <div class="d-flex justify-content-center my-3">
+            <div class="small-M mr-2 p-1">M</div> <strong> EATURES SLIDESHOW</strong>
+        </div>
+        <section class="slideshow dsmall slhw ml-2">
+            <div>
+                <div>
+                    <div class="bg-light my-0 align-items-center small-ff-d">
+                        <img class="three-red" src="image/3red.jpg" alt="">
+                    </div>
+                    <img class="ccc-imgg" src="image/ccc.jpg" alt="">
+                </div>
+                <div class="d-block boxcent">
+                    <div>
+                        <a href="">
+                            North Korea Firing Missiles on Thanksgiving Is 'No Coincidence': Ret. Col.
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div class="bg-light my-0 align-items-center small-ff-d">
+                        <img class="three-red" src="image/3red.jpg" alt="">
+                    </div>
+                    <img class="ccc-imgg" src="image/ccc.jpg" alt="">
+                </div>
+                <div class="d-block boxcent">
+                    <div>
+                        <a href="">
+                            North Korea Firing Missiles on Thanksgiving Is 'No Coincidence': Ret. Col.
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div class="bg-light my-0 align-items-center small-ff-d">
+                        <img class="three-red" src="image/3red.jpg" alt="">
+                    </div>
+                    <img class="ccc-imgg" src="image/ccc.jpg" alt="">
+                </div>
+                <div class="d-block boxcent">
+                    <div>
+                        <a href="">
+                            North Korea Firing Missiles on Thanksgiving Is 'No Coincidence': Ret. Col.
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div class="bg-light my-0 align-items-center small-ff-d">
+                        <img class="three-red" src="image/3red.jpg" alt="">
+                    </div>
+                    <img class="ccc-imgg" src="image/ccc.jpg" alt="">
+                </div>
+                <div class="d-block boxcent">
+                    <div>
+                        <a href="">
+                            North Korea Firing Missiles on Thanksgiving Is 'No Coincidence': Ret. Col.
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div class="bg-light my-0 align-items-center small-ff-d">
+                        <img class="three-red" src="image/3red.jpg" alt="">
+                    </div>
+                    <img class="ccc-imgg" src="image/ccc.jpg" alt="">
+                </div>
+                <div class="d-block boxcent">
+                    <div>
+                        <a href="">
+                            North Korea Firing Missiles on Thanksgiving Is 'No Coincidence': Ret. Col.
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div class="bg-light my-0 align-items-center small-ff-d">
+                        <img class="three-red" src="image/3red.jpg" alt="">
+                    </div>
+                    <img class="ccc-imgg" src="image/ccc.jpg" alt="">
+                </div>
+                <div class="d-block boxcent">
+                    <div>
+                        <a href="">
+                            North Korea Firing Missiles on Thanksgiving Is 'No Coincidence': Ret. Col.
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <!-- last article on the page under feature slide -->
+        <section class="main-last">
+            <strong class="usss mb- 0 mx-2 font-weight-bold">Tech % Sciences.</strong>
+            <div class="mini-last mt-0 ">
+                <div class="lsls">
+                    <div>
+                        <img class="lll-imgg" src="image/ks.jpg" alt="">
+                    </div>
+                    <div class="d-block boxcent">
+                        <div>
+                            <a href="">
+                                North Korea Firing Missiles on Thanksgiving Is 'No Coincidence': Ret. Col.
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img class="lll-imgg" src="image/ks2.jpg" alt="">
+                    </div>
+                    <div class="d-block boxcent">
+                        <div>
+                            <a href="">
+                                North Korea Firing Missiles on Thanksgiving Is 'No Coincidence': Ret. Col.
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="thrr-grid bg-light">
+                    <div>
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="seec-img"><img src="image/s1.jpg" alt=""></div>
+                            <div class="d-block px-3">
+                                <div><a href="">
+                                        Republican Defends Tweets Stating Rep. Ilhan Omar Should Be
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="seec-img"><img src="image/s2.jpg" alt=""></div>
+                            <div class="d-block px-3">
+                                <div><a href="">
+                                        Republican Defends Tweets Stating Rep. Ilhan Omar Should Be
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="seec-img"><img src="image/s2.jpg" alt=""></div>
+                            <div class="d-block px-3">
+                                <div><a href="">
+                                        Republican Defends Tweets Stating Rep. Ilhan Omar Should Be
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <hr>
+            <strong class="usss mb- 0 mx-2 font-weight-bold">U S.</strong>
+            <div class="mini-last mt-0 ">
+                <div>
+                    <div>
+                        <img class="lll-imgg" src="image/ks.jpg" alt="">
+                    </div>
+                    <div class="d-block boxcent">
+                        <div>
+                            <a href="">
+                                North Korea Firing Missiles on Thanksgiving Is 'No Coincidence': Ret. Col.
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img class="lll-imgg" src="image/ks2.jpg" alt="">
+                    </div>
+                    <div class="d-block boxcent">
+                        <div>
+                            <a href="">
+                                North Korea Firing Missiles on Thanksgiving Is 'No Coincidence': Ret. Col.
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="thrr-grid bg-light">
+                    <div>
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="seec-img"><img src="image/s1.jpg" alt=""></div>
+                            <div class="d-block px-3">
+                                <div><a href="">
+                                        Republican Defends Tweets Stating Rep. Ilhan Omar Should Be
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="seec-img"><img src="image/s2.jpg" alt=""></div>
+                            <div class="d-block px-3">
+                                <div><a href="">
+                                        Republican Defends Tweets Stating Rep. Ilhan Omar Should Be
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="seec-img"><img src="image/s2.jpg" alt=""></div>
+                            <div class="d-block px-3">
+                                <div><a href="">
+                                        Republican Defends Tweets Stating Rep. Ilhan Omar Should Be
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <hr>
+            <strong class="usss mb- 0 mx-2 font-weight-bold">cULTURE.</strong>
+            <div class="mini-last mt-0 ">
+                <div>
+                    <div>
+                        <img class="lll-imgg" src="image/ks.jpg" alt="">
+                    </div>
+                    <div class="d-block boxcent">
+                        <div>
+                            <a href="">
+                                North Korea Firing Missiles on Thanksgiving Is 'No Coincidence': Ret. Col.
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img class="lll-imgg" src="image/ks2.jpg" alt="">
+                    </div>
+                    <div class="d-block boxcent">
+                        <div>
+                            <a href="">
+                                North Korea Firing Missiles on Thanksgiving Is 'No Coincidence': Ret. Col.
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="thrr-grid bg-light">
+                    <div>
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="seec-img"><img src="image/s1.jpg" alt=""></div>
+                            <div class="d-block px-3">
+                                <div><a href="">
+                                        Republican Defends Tweets Stating Rep. Ilhan Omar Should Be
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="seec-img"><img src="image/s2.jpg" alt=""></div>
+                            <div class="d-block px-3">
+                                <div><a href="">
+                                        Republican Defends Tweets Stating Rep. Ilhan Omar Should Be
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="seec-img"><img src="image/s2.jpg" alt=""></div>
+                            <div class="d-block px-3">
+                                <div><a href="">
+                                        Republican Defends Tweets Stating Rep. Ilhan Omar Should Be
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <hr>
+            <strong class="usss mb- 0 mx-2 font-weight-bold">SPORTS.</strong>
+            <div class="mini-last mt-0 ">
+                <div>
+                    <div>
+                        <img class="lll-imgg" src="image/ks.jpg" alt="">
+                    </div>
+                    <div class="d-block boxcent">
+                        <div>
+                            <a href="">
+                                North Korea Firing Missiles on Thanksgiving Is 'No Coincidence': Ret. Col.
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img class="lll-imgg" src="image/ks2.jpg" alt="">
+                    </div>
+                    <div class="d-block boxcent">
+                        <div>
+                            <a href="">
+                                North Korea Firing Missiles on Thanksgiving Is 'No Coincidence': Ret. Col.
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="thrr-grid bg-light">
+                    <div>
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="seec-img"><img src="image/s1.jpg" alt=""></div>
+                            <div class="d-block px-3">
+                                <div><a href="">
+                                        Republican Defends Tweets Stating Rep. Ilhan Omar Should Be
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="seec-img"><img src="image/s2.jpg" alt=""></div>
+                            <div class="d-block px-3">
+                                <div><a href="">
+                                        Republican Defends Tweets Stating Rep. Ilhan Omar Should Be
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="d-flex justify-content-between py-2">
+                            <div class="seec-img"><img src="image/s2.jpg" alt=""></div>
+                            <div class="d-block px-3">
+                                <div><a href="">
+                                        Republican Defends Tweets Stating Rep. Ilhan Omar Should Be
+                                    </a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <hr>
+            <!-- subscribe -->
+            <strong class="usss mb- 0 mx-2 font-weight-bold">SUBSCRIBE.</strong>
+            <div class="mini-lasty mt-0 lastdd">
+                <div class="thrr-grid bg-light mx-2 dcf lastee">
+                    <div class="d-flex dcf justify-content-start py-3">
+                        <img class="lastr-img" src="image/last.jpg" alt="">
+                        <div class="d-block px-3">
+                            <div class="mb-2"><a href="">
+                                    Republican Defends Tweets Stating Rep. Ilhan Omar Should Be
+                                </a></div>
+                            <small>
+                                All Access + Weekly Delivery.
+                                Choose A Membership That's Perfect for You!
+                            </small>
+                            <div class="bg-danger m-3 px-2 subs-div1">
+                                <strong class="subscribel1 d-block text-white">SUBSCRIBE <i class=" px-0 fa fa-arrow-right"
+                                        aria-hidden="true"></i></strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="thrr-grid bg-light lastss">
+                    <div class="d-flex dcf justify-content-between py-2">
+                        <img class="hs-img" src="image/hs.jpg" alt="">
+                        <div class="d-block px-3">
+                            <div><a href="">
+                                    Republican Defends Tweets Stating Rep. Ilhan Omar Should Be
+                                </a></div>
+                            <small>
+                                Take back your inbox. Sign up for our newsletter
+                                and start making sense of the world around you.
+                            </small>
+                            <div class="bg-danger m-3 px-2 subs-div1">
+                                <strong class="subscribel1 d-block text-white">SIGNUP NOW <i class=" px-0 fa fa-arrow-right"
+                                    aria-hidden="true"></i></strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+        </section>
+
+        <svg class="wwe" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 395.6 60"
+            style="enable-background:new 0 0 395.6 60;" xml:space="preserve">
+            <g>
+                <path class="st0"
+                    d="M58.7,10.8h-5.6v48.3H42.8l-25.1-33v22.1h5.6v10.8H0V48.3h5.6V10.8H0V0h17.6L41,30.7V10.8h-5.6V0h23.2	L58.7,10.8L58.7,10.8z M95.8,38c0,0.9,0,1.8-0.1,2.7H70.3c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11	c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6C89.9,16.3,95.8,25.6,95.8,38 M159,27.3h-3.7	l-9.4,31.8h-12.5l-5.9-17.4l-5.3,17.4h-12.8L98.8,27.4h-3.7V16.6h22.1v10.7h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.6l5-16.9h-5.6V16.6	H159L159,27.3L159,27.3z M174.5,27.8c0,1.5,1.2,2.5,5.4,3.9l6,2c5.5,1.8,12.1,5.9,12.1,13.4c0,8.8-6.6,13-14.7,13	c-6.5,0-11.5-3.2-12.9-4.6V59h-10.8V44.4h10.6c0.3,4.8,4.6,7.3,8.5,7.3c3.2,0,4.7-1.4,4.7-3c0-2-1.2-3.1-6.5-4.8l-5.3-1.8	c-5.4-1.7-11.4-5.7-11.4-12.8c0-8.7,7.7-13.1,14.3-13.1c6.8,0,10.1,1.9,11.8,3.8l0.1-3.3H197v13.3h-11.2c-0.2-3.6-3.7-5.2-7.2-5.2	C175.8,24.8,174.5,26.1,174.5,27.8 M262.8,27.3h-3.7l-9.4,31.8h-12.5l-5.9-17.4L226,59.1h-12.8l-10.6-31.7h-3.7V16.6h22.1v10.7	h-5.6l5.8,16.9l7.6-27.6h6.8l9.3,27.7l5-16.9h-5.6V16.6h18.5V27.3z M302,37.9c0,0.9,0,1.8-0.1,2.7h-25.4	c-0.7,8.2,2.4,10.6,7.1,10.6c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1	c0-10.5,7-21.6,21-21.6C296.1,16.2,302,25.5,302,37.9 M343.9,37.8c0,0.9,0,1.8-0.1,2.7h-25.4c-0.7,8.2,2.4,10.6,7.1,10.6	c3.9,0,6.9-2.6,6.9-6.6h11c-0.3,7.2-4,15.4-18.5,15.4c-14.5,0-21.3-10.5-21.3-22.1c0-10.5,7-21.6,21-21.6	C338,16.1,343.9,25.4,343.9,37.8 M389.9,59h-12.8l-13.3-17.3l-4.3,3.2v3.4h3.8V59h-19.6V48.3h3.7V10.6h-5.6V0h17.8v33.9l8.9-6.5	h-5.6V16.6h23.9v10.8h-3.7l-9.3,7l10.7,13.9h5.6L389.9,59L389.9,59z M395.6,56.6c0,0.5-0.1,0.9-0.4,1.2c-0.2,0.4-0.5,0.7-0.9,0.9	c-0.4,0.2-0.8,0.4-1.3,0.4c-0.5,0-0.9-0.1-1.2-0.4c-0.4-0.2-0.7-0.5-0.9-0.9c-0.2-0.4-0.4-0.8-0.4-1.2c0-0.5,0.1-0.9,0.4-1.2	c0.2-0.4,0.5-0.7,0.9-0.9c0.4-0.2,0.8-0.4,1.2-0.4c0.5,0,0.9,0.1,1.3,0.4c0.4,0.2,0.7,0.5,0.9,0.9	C395.5,55.8,395.6,56.2,395.6,56.6 M394.6,58c0.4-0.4,0.6-0.9,0.6-1.4c0-0.6-0.2-1-0.6-1.4s-0.9-0.6-1.4-0.6s-1,0.2-1.4,0.6	c-0.4,0.4-0.6,0.9-0.6,1.4c0,0.6,0.2,1,0.6,1.4c0.4,0.4,0.9,0.6,1.4,0.6S394.2,58.4,394.6,58 M393.6,56.8c0.1,0.1,0.2,0.1,0.2,0.1	c0.1,0.1,0.2,0.2,0.2,0.3c0,0,0.2,0.3,0.4,0.8h-0.8c-0.3-0.5-0.4-0.8-0.5-0.9c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1,0-0.1,0v1.1h-0.6	v-2.6h1.2c0.4,0,0.6,0.1,0.7,0.2c0.2,0.2,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.5C393.9,56.6,393.8,56.7,393.6,56.8 M393.5,56.3	c0.1-0.1,0.1-0.2,0.1-0.3s-0.1-0.2-0.1-0.3c-0.1-0.1-0.2-0.1-0.4-0.1h-0.3v0.7h0.3C393.3,56.4,393.4,56.4,393.5,56.3 M318.4,33.5	h13.9c0-6-3.9-8.4-6.8-8.4C322.1,25.2,318.6,27.9,318.4,33.5 M276.5,33.6h13.9c0-6-3.9-8.4-6.8-8.4C280.3,25.2,276.8,28,276.5,33.6 M70.3,33.7h13.9c0-6-3.9-8.4-6.8-8.4C74.1,25.3,70.6,28.1,70.3,33.7" />
+            </g>
+        </svg>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <!-- big div -->
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js"
+        integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
