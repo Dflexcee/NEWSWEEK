@@ -18,17 +18,19 @@ ul {
   list-style: none;
 }
 
+.allnav {
+ width: 97%;
+}
+
 .liv a {
   color: black;
 }
 
 .ul-v {
   color: black;
-  border-top-right-radius: 20%;
-  width: 97%;
+  border-top-right-radius: 50px 100px;
+  width: 95%;
   height: 3rem;
-  position: absolute;
-  top: 3.6rem;
 }
 
 input[type=text] {
@@ -46,10 +48,10 @@ input[type=text] {
   transition: width 0.4s ease-out;
   height: 2rem;
 }
-    
-  input[type=text]:focus {
-  width: 100%;
-}
+    /* I STOP THE STRCH  SEACH BAR FROM WORKING  */
+  /* input[type=text]:focus {
+  width: 30%;
+} */
 
 .svv {
   fill: white;
@@ -74,13 +76,18 @@ input[type=text] {
   background-color: red;
   color: white;
   width: 100%;
-  height: 5rem;
+  height: 6rem;
   display: flex;
   justify-content: space-between;
   align-content: flex-end;
   position: sticky;
   top: 0;
   z-index: 10;
+}
+
+.hidnav {
+  background-color:red;
+  height: 1rem;
 }
 
 .big-container {
@@ -91,6 +98,7 @@ input[type=text] {
   height: auto;
   background-color: red;
   color: white;
+  margin-top: 0.9rem;
 }
 
 .ct-nav {
@@ -305,9 +313,39 @@ justify-content: end;
   fill: red;
   width: 12rem;
   height: 6rem;
+  padding: 0;
+  margin: 0;
 }
 
+.last-small {
+  margin: 3rem 0 0 1rem;
+}
 
+.last-small1 {
+  margin: 3rem 0 0 1rem;
+  font-size: 1.4rem;
+}
+
+.hiis {
+  background-color: white;
+  border-bottom-color: #f4f5f6;
+}
+
+.ullast {
+  width: 40%;
+}
+
+.ullast2 {
+  width: 80%;
+}
+
+.ullast3 {
+  width: 15%;
+}
+
+.yyll {
+  margin-right: 1rem;
+}
 
 
 
@@ -373,6 +411,15 @@ justify-content: end;
     overflow-x: hidden;
   }
 
+  .allnav,
+  .time {
+    display: none;
+  }
+
+  .navv1 {
+    height: 5rem;
+  }
+  
   .spons {
    align-items: center;
    align-content: center;
@@ -414,6 +461,22 @@ justify-content: end;
     width: 100%;
   }
 
+  .ullast {
+    width: 80%;
+
+  }
+
+  .ullast2 {
+    width: 100rem;
+  }
+
+  .yyll {
+    margin-right: 0.4rem;
+  }
+
+  .ullast3 {
+    width: 20%;
+  }
 
 }
 
@@ -435,39 +498,10 @@ justify-content: end;
   .main-h {
     padding: 1rem;
     align-items: flex-start;
-  } 
-
-  .he1 {
-    width: 60%;
   }
 
-  .he2 {
-    width: 30%;
-  }
-
-  .he3 {
-    width: 50%;
-  }
-
-  .newletter {
-    font-size: large;
-  }
-
-  .time {
-   display: none;
-  }
-
-  .ct-nav {
-    display: none;
-  }
-
-  .allnav{
-    display: none;
-  }
-
-  .ff-main {
-    display: block;
-    padding: 0 1rem;
+  .navv1 {
+    height: 5rem;
   }
 
   .ff-mini1,
@@ -479,11 +513,14 @@ justify-content: end;
 
   .fst-img,
   .cc-imgg {
-  width: 8rem;
-  height: 6rem;
-  margin-right: 1rem;
+    width: 8rem;
+    height: 6rem;
+    margin-right: 1rem;
   }
 
+  .ct-nav,
+  .allnav,
+  .time,
   .small-ff-d strong, 
   .small-ff-d1 strong {
     display: none;
@@ -494,19 +531,12 @@ justify-content: end;
     margin-bottom: 2rem;
   }
 
-  .sec-grid {
-    display: block;
-    padding: 0 1rem;
-  }
-
   .dsmall,
   .main-last,
   .mini-last,
-  .mini-lasty {
-    display: block;
-    padding: 0 1rem;
-  }
-
+  .mini-lasty,
+  .sec-grid,
+  .ff-main,
   .slhw {
     display: block;
     padding: 0 1rem;
