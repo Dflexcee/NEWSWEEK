@@ -19,7 +19,7 @@ ul {
 }
 
 .allnav {
- width: 97%;
+width: 99%;
 }
 
 .liv a {
@@ -44,14 +44,9 @@ input[type=text] {
   background-position: 10px 10px; 
   background-repeat: no-repeat;
   padding: 12px 20px 12px 40px;
-  -webkit-transition: width 0.4s ease-in-out;
-  transition: width 0.4s ease-out;
   height: 2rem;
+  border-top-right-radius: 50px 100px;
 }
-    /* I STOP THE STRCH  SEACH BAR FROM WORKING  */
-  /* input[type=text]:focus {
-  width: 30%;
-} */
 
 .svv {
   fill: white;
@@ -186,10 +181,9 @@ input[type=text] {
 }
 
 .div-right-img{
- width: 630x;
- height: 630x;
- border-radius: 50%;
-
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
 }
 
 .fst-circle {
@@ -332,11 +326,14 @@ justify-content: end;
 }
 
 .ullast {
-  width: 40%;
+  width: 45%;
 }
 
 .ullast2 {
-  width: 80%;
+  width: 40%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 2px;
 }
 
 .ullast3 {
@@ -347,22 +344,6 @@ justify-content: end;
   margin-right: 1rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media only screen and (max-width: 1200px) {
   .svv {
     margin-left: 0;
@@ -370,9 +351,9 @@ justify-content: end;
     height: 6rem;
   }
 
-.fst-img2 {
+  .fst-img2 {
   width: 22rem;
-}
+  }
 
   .main-h {
     padding: 1rem;
@@ -421,8 +402,8 @@ justify-content: end;
   }
   
   .spons {
-   align-items: center;
-   align-content: center;
+  align-items: center;
+  align-content: center;
   }
 
   .boxcent1{
@@ -462,12 +443,11 @@ justify-content: end;
   }
 
   .ullast {
-    width: 80%;
-
+    width: 70%;
   }
 
   .ullast2 {
-    width: 100rem;
+    width: 30rem;
   }
 
   .yyll {
@@ -477,7 +457,6 @@ justify-content: end;
   .ullast3 {
     width: 20%;
   }
-
 }
 
 @media only screen and (max-width: 760px) {
@@ -522,7 +501,8 @@ justify-content: end;
   .allnav,
   .time,
   .small-ff-d strong, 
-  .small-ff-d1 strong {
+  .small-ff-d1 strong,
+  .ast-small {
     display: none;
   }
   
@@ -567,5 +547,45 @@ justify-content: end;
 
   .navv1 {
     align-content: flex-end;
+  }
+
+   .ullast {
+    width: 100%;
+  }
+
+  .ullast2 {
+    display: grid;
+    grid-template-columns: 20fr 20fr 20fr 20fr 20fr 20fr 20fr 20fr; 
+    width: 40%;
+  }
+
+  .yyll {
+    margin-right: 0.4rem;
+  }
+
+  .ullast3 {
+    width: 40%;
+  }
+
+  .bbc2,
+  .bbc1 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+
+  .wwe {
+    width: 12rem;
+    height: 1.5rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .last-small {
+    margin: 0.5rem 1rem;
+  }
+
+  .last-small1 {
+    margin-top: 4rem;
   }
 }
