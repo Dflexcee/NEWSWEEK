@@ -19,7 +19,7 @@ ul {
 }
 
 .allnav {
-width: 99%;
+  width: 99%;
 }
 
 .liv a {
@@ -41,7 +41,8 @@ input[type=text] {
   font-size: 16px;
   background-color: white;
   background-image: url('image/search.jpg');
-  background-position: 10px 10px; 
+  background-position: 10px
+  10px;
   background-repeat: no-repeat;
   padding: 12px 20px 12px 40px;
   height: 2rem;
@@ -81,7 +82,7 @@ input[type=text] {
 }
 
 .hidnav {
-  background-color:red;
+  background-color: red;
   height: 1rem;
 }
 
@@ -120,13 +121,12 @@ input[type=text] {
   width: 20rem;
   height: 14rem;
   margin-right: 1rem;
-  }
+}
 
-  .fst-img2 {
+.fst-img2 {
   width: 26rem;
   height: 16rem;
-  }
-  
+}
 
 .ff-mini2 {
   width: 39%;
@@ -180,7 +180,7 @@ input[type=text] {
   cursor: pointer;
 }
 
-.div-right-img{
+.div-right-img {
   width: 63px;
   height: 63px;
   border-radius: 50%;
@@ -271,8 +271,8 @@ input[type=text] {
 }
 
 .mini-lasty {
-display: flex;
-justify-content: end;
+  display: flex;
+  justify-content: end;
 }
 
 .lastr-img {
@@ -352,19 +352,19 @@ justify-content: end;
   }
 
   .fst-img2 {
-  width: 22rem;
+      width: 22rem;
   }
 
   .main-h {
     padding: 1rem;
     align-items: flex-start;
-  } 
+  }
 
   .ff-main {
     display: grid;
     grid-template-columns: 2fr 2fr;
   }
-  
+
   .gridy {
     display: flex;
     flex-direction: column;
@@ -382,7 +382,7 @@ justify-content: end;
   .ff-mini,
   .ff-mini2,
   .gridy,
-  .mini-lasty  {
+  .mini-lasty {
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -400,19 +400,19 @@ justify-content: end;
   .navv1 {
     height: 5rem;
   }
-  
+
   .spons {
-  align-items: center;
-  align-content: center;
+    align-items: center;
+    align-content: center;
   }
 
-  .boxcent1{
+  .boxcent1 {
     padding: 0;
   }
 
   .ff-mini2 {
     padding: 0;
-    align-items: center
+    align-items: center;
   }
 
   .sec-grid {
@@ -437,7 +437,7 @@ justify-content: end;
     height: 15rem;
     margin-left: 0.8rem;
   }
-  
+
   .thrr-grid {
     width: 100%;
   }
@@ -500,12 +500,12 @@ justify-content: end;
   .ct-nav,
   .allnav,
   .time,
-  .small-ff-d strong, 
+  .small-ff-d strong,
   .small-ff-d1 strong,
   .ast-small {
     display: none;
   }
-  
+
   .boxcent {
     margin-right: 1rem;
     margin-bottom: 2rem;
@@ -549,13 +549,13 @@ justify-content: end;
     align-content: flex-end;
   }
 
-   .ullast {
+  .ullast {
     width: 100%;
   }
 
   .ullast2 {
     display: grid;
-    grid-template-columns: 20fr 20fr 20fr 20fr 20fr 20fr 20fr 20fr; 
+    grid-template-columns: 20fr 20fr 20fr 20fr 20fr 20fr 20fr 20fr;
     width: 40%;
   }
 
