@@ -41,8 +41,7 @@ input[type=text] {
   font-size: 16px;
   background-color: white;
   background-image: url('image/search.jpg');
-  background-position: 10px
-  10px;
+  background-position: 10px 10px;
   background-repeat: no-repeat;
   padding: 12px 20px 12px 40px;
   height: 2rem;
@@ -352,7 +351,7 @@ input[type=text] {
   }
 
   .fst-img2 {
-      width: 22rem;
+    width: 22rem;
   }
 
   .main-h {
@@ -481,6 +480,7 @@ input[type=text] {
 
   .navv1 {
     height: 5rem;
+    align-content: flex-end;
   }
 
   .ff-mini1,
@@ -543,10 +543,6 @@ input[type=text] {
     margin-left: 0;
     width: 10rem;
     height: 6rem;
-  }
-
-  .navv1 {
-    align-content: flex-end;
   }
 
   .ullast {
