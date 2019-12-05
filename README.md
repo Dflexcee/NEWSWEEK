@@ -1,5 +1,5 @@
 # Project Title
-#### NEW-YORK-TIME-CLONE
+#### NEWSWEEK-CLONE
 
 ### Authors:
 [FLEXCEE](https://github.com/Dflexcee/)  Please for now i do not have a partiner, 
@@ -10,10 +10,9 @@ my project while i wait for new partner
 ## Live Project:
 
 ### Link to the Assignment:
-[CLICK HERE](https://www.theodinproject.com/courses/html5-and-css3/lessons/positioning-and-floating-elements)
+[CLICK HERE](https://www.theodinproject.com/courses/html5-and-css3/lessons/using-bootstrap)
 
 ### LIVE SCREENSHOT OF MY PROJECT
-
-![2](https://user-images.githubusercontent.com/53564831/68097642-1775d780-fe6d-11e9-990b-fd12dee0167b.jpg)
+![nwesweek](https://user-images.githubusercontent.com/53564831/70198928-21d1fe00-16c5-11ea-9f69-66baebde5a68.jpg)
 
 
