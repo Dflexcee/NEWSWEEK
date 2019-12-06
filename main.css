@@ -14,6 +14,18 @@ a:hover {
   color: red;
 }
 
+.lla {
+  color: white;
+}
+
+.lla:hover {
+  color: rgb(246, 243, 243);
+}
+
+.llas {
+  color: black;
+}
+
 ul {
   list-style: none;
 }
@@ -78,6 +90,10 @@ input[type=text] {
   position: sticky;
   top: 0;
   z-index: 10;
+}
+
+.dlgg {
+  display: none;
 }
 
 .hidnav {
@@ -351,7 +367,7 @@ input[type=text] {
   }
 
   .fst-img2 {
-    width: 22rem;
+    width: 25rem;
   }
 
   .main-h {
@@ -364,15 +380,15 @@ input[type=text] {
     grid-template-columns: 2fr 2fr;
   }
 
-  .gridy {
+  /* .gridy {
     display: flex;
     flex-direction: column;
     width: 90%;
     padding: 0 2rem;
-  }
+  } */
 
   .contain-g {
-    width: 24rem;
+    width: 26rem;
     margin-top: 2rem;
   }
 
@@ -380,7 +396,7 @@ input[type=text] {
   .ff-mini1,
   .ff-mini,
   .ff-mini2,
-  .gridy,
+  /* .gridy, */
   .mini-lasty {
     display: flex;
     flex-direction: column;
@@ -502,7 +518,8 @@ input[type=text] {
   .time,
   .small-ff-d strong,
   .small-ff-d1 strong,
-  .ast-small {
+  .ast-small,
+  .tts {
     display: none;
   }
 
@@ -522,7 +539,8 @@ input[type=text] {
     padding: 0 1rem;
   }
 
-  .dcf {
+  .dcf,
+  .dlgg {
     display: flex;
     flex-direction: column;
   }
