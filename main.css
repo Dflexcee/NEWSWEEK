@@ -73,16 +73,19 @@ input[type=text] {
 
 .subs-div {
   height: 1.5rem;
+  padding: 0 0.3rem;
+  margin-top: 3rem;
 }
 
 .sinp {
   margin-left: 17rem;
+  margin-top: 3rem;
 }
 
 .navv1 {
   background-color: red;
   color: white;
-  width: 100%;
+  width: 80rem;
   height: 6rem;
   display: flex;
   justify-content: space-between;
@@ -107,7 +110,7 @@ input[type=text] {
   height: auto;
   background-color: red;
   color: white;
-  margin-top: 0.9rem;
+  margin-top: 1.2rem;
 }
 
 .ct-nav {
@@ -294,7 +297,7 @@ input[type=text] {
 }
 
 .lastdd {
-  width: 100%;
+  /* width: 100%; */
 }
 
 .lastee {
@@ -370,6 +373,15 @@ input[type=text] {
 
   .fst-img2 {
     width: 25rem;
+  }
+
+  .navv1 {
+    height: 4rem;
+    width: 57rem;
+  }
+
+  .hidnav {
+    width: 57rem;
   }
 
   .main-h {
@@ -483,6 +495,10 @@ input[type=text] {
   .sinp {
     margin-left: 24rem;
   }
+
+  .boxcent {
+    margin-left: 1rem;
+  }
 }
 
 @media only screen and (max-width: 760px) {
@@ -491,9 +507,9 @@ input[type=text] {
     align-items: center;
   }
 
-  body {
+  /* body {
     overflow-x: hidden;
-  }
+  } */
 
   .mdp {
     display: flex;
@@ -507,6 +523,11 @@ input[type=text] {
 
   .navv1 {
     height: 4rem;
+    width: 31rem;
+  }
+
+  .hidnav {
+    width: 31rem;
   }
 
   .ff-mini1,
@@ -563,8 +584,7 @@ input[type=text] {
 
   .sinp {
     margin-left: 2rem;
-    margin-bottom: 3rem;
-    margin-top: 1rem;
+    margin-top: 2.1rem;
     margin-right: 1rem;
   }
 
@@ -582,6 +602,7 @@ input[type=text] {
     display: grid;
     grid-template-columns: 20fr 20fr 20fr 20fr 20fr 20fr 20fr 20fr;
     width: 40%;
+    margin: 0.4rem;
   }
 
   .yyll {
@@ -621,7 +642,7 @@ input[type=text] {
   }
 
   .lastss {
-    width: 30rem;
+    width: rem;
   }
 
   .ssubb {
@@ -630,5 +651,9 @@ input[type=text] {
 
   .hs-img {
     width: 20rem;
+  }
+
+  .subs-div {
+    margin-top: 2.1rem;
   }
 }
