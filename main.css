@@ -268,7 +268,7 @@ input[type=text] {
 
 .ccc-imgg {
   height: 14rem;
-  width: 24rem;
+  width: 20rem;
 }
 
 .mini-last {
@@ -364,7 +364,7 @@ input[type=text] {
   padding: 0 1rem;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1024px) {
   .svv {
     margin-left: 0;
     width: 10.1rem;
@@ -372,16 +372,16 @@ input[type=text] {
   }
 
   .fst-img2 {
-    width: 25rem;
+    width: 24rem;
+  }
+
+  .main-last {
+    max-width: 250rem;
   }
 
   .navv1 {
     height: 4rem;
-    width: 57rem;
-  }
-
-  .hidnav {
-    width: 57rem;
+    width: 100%;
   }
 
   .main-h {
@@ -417,9 +417,9 @@ input[type=text] {
     width: 90%;
   }
 
-  body {
+  /* body {
     overflow-x: hidden;
-  }
+  } */
 
   .allnav,
   .time {
@@ -438,11 +438,12 @@ input[type=text] {
   .ff-mini2 {
     padding: 0;
     align-items: center;
+    max-width: 22rem;
   }
 
   .sec-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .editors {
@@ -458,13 +459,13 @@ input[type=text] {
 
   .lsls,
   .lll-imgg {
-    width: 16rem;
-    height: 15rem;
+    width: 12rem;
+    height: 12rem;
     margin-left: 0.8rem;
   }
 
   .thrr-grid {
-    width: 100%;
+    width: 95%;
   }
 
   .ullast {
@@ -489,7 +490,7 @@ input[type=text] {
   }
 
   .sinp {
-    margin-left: 24rem;
+    margin-left: 17rem;
   }
 
   .boxcent {
